@@ -27,6 +27,16 @@ public class LinkedList<E> {
          head=node;
      }
 
+     public void add_in_between(E data){
+         GenericNode node=new GenericNode();
+         GenericNode n=head;
+         GenericNode temp;
+         temp=n.next;
+         n.next=node;
+         node.data=data;
+         node.next=temp;
+     }
+
      public void show(){
          GenericNode node=head;
          while(node.next!=null){
