@@ -3,7 +3,7 @@ public class LinkedList<E> {
     GenericNode<E> head;
 
      public void add_data(E data){
-         GenericNode node=new  GenericNode();
+         GenericNode node=new GenericNode();
          node.data=data;
          node.next=null;
 
@@ -19,6 +19,14 @@ public class LinkedList<E> {
          }
      }
 
+     public void add_reverse_data(E data){
+         GenericNode node=new GenericNode();
+         GenericNode n=head;
+         node.data=data;
+         node.next=n;
+         head=node;
+     }
+
      public void show(){
          GenericNode node=head;
          while(node.next!=null){
@@ -26,6 +34,5 @@ public class LinkedList<E> {
              node=node.next;
          }
          System.out.println(node.data);
-
      }
 }
