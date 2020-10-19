@@ -10,5 +10,10 @@ public class LinkedListMain {
         list2.add_reverse_data(30);
         list2.add_reverse_data(56);
         list2.show();
+        LinkedList list3=new LinkedList();
+        list3.add_data(56);
+        list3.add_data(70);
+        list3.add_in_between(30);
+        list3.show();
     }
 }
