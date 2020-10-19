@@ -43,9 +43,18 @@ public class LinkedList<E> {
          temp=n.next;
          n.next=null;
          head=temp;
-
      }
-
+    public void delete_last_node(){
+        GenericNode n=head;
+        while(n.next!=null){
+        n=n.next;
+       }
+        GenericNode m=head;
+        while(m.next!=n){
+            m=m.next;
+        }
+        m.next=null;
+    }
      public void show(){
          GenericNode node=head;
          while(node.next!=null){

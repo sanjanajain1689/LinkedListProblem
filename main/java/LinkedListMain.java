@@ -17,5 +17,7 @@ public class LinkedListMain {
         list3.show();
         list3.delete_first_node();
         list3.show();
+        list2.delete_last_node();
+        list2.show();
     }
 }
