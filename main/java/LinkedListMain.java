@@ -15,5 +15,7 @@ public class LinkedListMain {
         list3.add_data(70);
         list3.add_in_between(30);
         list3.show();
+        list3.delete_first_node();
+        list3.show();
     }
 }
